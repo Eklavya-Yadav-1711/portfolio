@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #020204;
+  --bg2: #050508;
+  --cyan: #F02E65;
+  --violet: #A855F7;
+  --gold: #FBBF24;
+  --red: #EF4444;
+  --text: #FFFFFF;
+  --text-secondary: #E0E0EC;
+  --text-muted: #888899;
+  --border: rgba(255, 255, 255, 0.06);
+  --card: rgba(255, 255, 255, 0.02);
+  --glass: rgba(4, 4, 12, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+  font-family: var(--font-space-grotesk);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Noise and grid sit BEHIND content so they don't cover the page */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -2;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.008) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.008) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Mac-style glass panels */
+.glass {
+  background: var(--glass);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border: 1px solid var(--glass-border);
+}
+.glass-card {
+  background: rgba(8, 8, 16, 0.6);
+  backdrop-filter: saturate(150%) blur(16px);
+  -webkit-backdrop-filter: saturate(150%) blur(16px);
+  border: 1px solid var(--glass-border);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--cyan), var(--violet));
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--cyan);
+  color: #000;
+}
+
+@keyframes scrollLine {
+  0%, 100% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); opacity: 0.3; }
+  50% { transform: translate(10px, -20px); opacity: 0.6; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
