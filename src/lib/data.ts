@@ -183,10 +183,10 @@ export const projects: Project[] = [
 export const contactLinks = {
   github: { label: "GitHub", handle: "@Eklavya-Yadav-1711", href: "https://github.com/Eklavya-Yadav-1711", icon: "🐙" },
   linkedin: { label: "LinkedIn", handle: "Eklavya Yadav", href: "https://www.linkedin.com/in/eklavya-yadav", icon: "💼" },
-  email: {
-    label: "Email",
-    handle: "rajeklavya65@gmail.com",
-    href: "mailto:rajeklavya65@gmail.com",
-    icon: "✉️",
+  instagram: {
+    label: "Instagram",
+    handle: "@heyeklavya",
+    href: "https://www.instagram.com/heyeklavya",
+    icon: "📸",
   },
 };

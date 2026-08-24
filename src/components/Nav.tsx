@@ -63,17 +63,6 @@ export default function Nav() {
         ))}
       </div>
 
-      <Link
-        href="#contact"
-        className="hidden md:block font-mono text-xs px-5 py-2.5 border border-[var(--cyan)] text-[var(--cyan)] hover:bg-[var(--cyan)] hover:text-black transition-all duration-300"
-        style={{
-          clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))",
-        }}
-        data-cursor-hover
-      >
-        CONNECT ⚡
-      </Link>
-
       <button
         type="button"
         className="md:hidden w-10 h-10 flex flex-col justify-center gap-1.5"

@@ -20,7 +20,7 @@ export default function Contact() {
         {[
           { ...contactLinks.github, href: contactLinks.github.href },
           { ...contactLinks.linkedin, href: contactLinks.linkedin.href },
-          { ...contactLinks.email, href: contactLinks.email.href },
+          { ...contactLinks.instagram, href: contactLinks.instagram.href },
         ].map((item, i) => (
           <ScrollReveal key={item.label} delay={i * 0.1}>
             <Link
@@ -34,7 +34,7 @@ export default function Contact() {
               </h4>
               <p className="font-mono text-sm text-[var(--text-muted)] mb-4">{item.handle}</p>
               <span className="text-[var(--cyan)] text-sm font-mono hover:underline">
-                {item.label === "Email" ? "Mail me" : "Visit →"}
+                Visit →
               </span>
             </Link>
           </ScrollReveal>

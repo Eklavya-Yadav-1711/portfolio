@@ -73,59 +73,6 @@ export default function Hero() {
         </span>
       </div>
 
-      <div className="absolute bottom-8 right-6 hidden md:flex items-center justify-center w-24 h-24">
-        <div
-          className="absolute inset-0 rounded-full border border-[var(--border)] animate-spin"
-          style={{ animationDuration: "20s" }}
-        >
-          {["BUILDING", "SHIPPING", "FOUNDER"].map((word, i) => {
-            const angleDeg = i * 120;
-            const angleRad = (angleDeg * Math.PI) / 180;
-            const r = 36;
-            const x = r * Math.sin(angleRad);
-            const y = -r * Math.cos(angleRad);
-            return (
-              <span
-                key={word}
-                className="absolute left-1/2 top-1/2 text-[0.5rem] font-mono text-white uppercase tracking-wider whitespace-nowrap"
-                style={{
-                  transform: `translate(-50%, -50%) translate(${x}px, ${y}px) rotate(${angleDeg}deg)`,
-                }}
-              >
-                {word}
-              </span>
-            );
-          })}
-        </div>
-        {/* Soft glowing nebula (blurred, low opacity) */}
-        <span
-          className="absolute inset-0 flex items-center justify-center pointer-events-none"
-          aria-hidden
-        >
-          <span
-            className="absolute w-12 h-12 rounded-full opacity-[0.22]"
-            style={{
-              background: "var(--cyan)",
-              filter: "blur(14px)",
-            }}
-          />
-          <span
-            className="absolute w-8 h-8 rounded-full opacity-[0.12]"
-            style={{
-              background: "var(--cyan)",
-              filter: "blur(8px)",
-            }}
-          />
-          <span
-            className="relative z-10 w-1.5 h-1.5 rounded-full opacity-60"
-            style={{
-              background: "var(--cyan)",
-              boxShadow: "0 0 8px var(--cyan)",
-            }}
-          />
-        </span>
-      </div>
-
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-wrap justify-center gap-3">
         <span className="px-3 py-1.5 rounded-full border border-[var(--border)] bg-[var(--card)] font-mono text-[0.65rem] text-[var(--text-muted)]">
           🌌 Future Cosmologist
