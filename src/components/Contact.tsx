@@ -11,18 +11,6 @@ export default function Contact() {
         <p className="font-mono text-[var(--cyan)] text-[0.65rem] uppercase tracking-[0.4em] mb-4">
           // LET&apos;S CONNECT
         </p>
-        <h2
-          className="text-white font-extrabold mb-2"
-          style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(3rem, 7vw, 7rem)" }}
-        >
-          BUILD SOMETHING
-        </h2>
-        <h2
-          className="text-white font-extrabold mb-6"
-          style={{ fontFamily: "var(--font-space-grotesk)", fontSize: "clamp(3rem, 7vw, 7rem)" }}
-        >
-          LEGENDARY.
-        </h2>
         <p className="text-[#CCCCDD] text-base leading-relaxed mb-12 max-w-xl">
           Whether it&apos;s a collaboration, a startup idea, or just a conversation about black holes — I&apos;m here.
         </p>

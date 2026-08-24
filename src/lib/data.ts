@@ -128,8 +128,20 @@ export const skillGroups: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
-    id: "origin-of-saare",
+    id: "nearteach",
     number: "01",
+    category: "Startup",
+    name: "NEARTEACH",
+    description:
+      "Hyperlocal home tuition platform — PostGIS-powered tutor discovery within 1/3/5km. Live with 230+ users.",
+    tags: ["React Native", "Node.js", "PostgreSQL", "PostGIS"],
+    color: "#6EE7B7",
+    status: "live",
+    link: "https://nearteach.com",
+  },
+  {
+    id: "origin-of-saare",
+    number: "02",
     category: "Production",
     name: "ORIGIN OF SAARE",
     description:
@@ -139,18 +151,6 @@ export const projects: Project[] = [
     status: "coming_soon",
     image: "/project-photos/origin-of-saare.png",
     // link: "https://...", // Add when project is live — card click will open this URL
-  },
-  {
-    id: "cook-bachelor",
-    number: "02",
-    category: "App",
-    name: "COOK - BACHELOR",
-    description:
-      "A smart cooking companion for bachelors. Recipes, meal plans, and grocery tracking — all in one place.",
-    tags: ["React Native", "Node.js", "Supabase"],
-    color: "#A855F7",
-    status: "coming_soon",
-    image: "/project-photos/cook-bachelor.png",
   },
   {
     id: "resqora",
@@ -166,20 +166,8 @@ export const projects: Project[] = [
     image: "/project-photos/resqora.png",
   },
   {
-    id: "nearteach",
-    number: "04",
-    category: "Startup",
-    name: "NEARTEACH",
-    description:
-      "Hyperlocal home tuition platform — PostGIS-powered tutor discovery within 1/3/5km. Live with 230+ users.",
-    tags: ["React Native", "Node.js", "PostgreSQL", "PostGIS"],
-    color: "#6EE7B7",
-    status: "live",
-    link: "https://nearteach.com",
-  },
-  {
     id: "oglos",
-    number: "05",
+    number: "04",
     category: "Security",
     name: "OGLOS",
     description:
@@ -188,18 +176,6 @@ export const projects: Project[] = [
     color: "#FBBF24",
     status: "coming_soon",
     image: "/project-photos/oglos.png",
-  },
-  {
-    id: "taskmate",
-    number: "06",
-    category: "Tool",
-    name: "TASKMATE",
-    description:
-      "Project management done right. Trello-inspired but built from scratch with custom workflows and team boards.",
-    tags: ["React", "Node.js", "Drizzle ORM", "Docker"],
-    color: "#A855F7",
-    status: "coming_soon",
-    image: "/project-photos/taskmate.png",
   },
 ];
 
