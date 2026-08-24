@@ -72,7 +72,7 @@ export default function About() {
                   <span style={{ color: "#C084FC" }}>&quot;role&quot;</span>
                   <span style={{ color: "#67E8F9" }}>: &quot;Full Stack Developer&quot;</span>,{"\n  "}
                   <span style={{ color: "#C084FC" }}>&quot;year&quot;</span>
-                  <span style={{ color: "#FCD34D" }}>: 3</span>,{"\n  "}
+                  <span style={{ color: "#67E8F9" }}>: &quot;Final&quot;</span>,{"\n  "}
                   <span style={{ color: "#C084FC" }}>&quot;dream&quot;</span>
                   <span style={{ color: "#67E8F9" }}>: &quot;Cosmologist&quot;</span>,{"\n  "}
                   <span style={{ color: "#C084FC" }}>&quot;hustler&quot;</span>

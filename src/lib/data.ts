@@ -137,6 +137,7 @@ export const projects: Project[] = [
     tags: ["React Native", "Node.js", "PostgreSQL", "PostGIS"],
     color: "#6EE7B7",
     status: "live",
+    image: "/project-photos/nearteach.png",
     link: "https://nearteach.com",
   },
   {
@@ -148,9 +149,9 @@ export const projects: Project[] = [
       "A real production app built for a real client. Delivered end-to-end.",
     tags: ["React", "Node.js", "PostgreSQL"],
     color: "#F02E65",
-    status: "coming_soon",
+    status: "live",
     image: "/project-photos/origin-of-saare.png",
-    // link: "https://...", // Add when project is live — card click will open this URL
+    link: "https://www.originofmysaree.com/",
   },
   {
     id: "resqora",

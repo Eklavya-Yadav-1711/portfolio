@@ -42,16 +42,7 @@ export default function Contact() {
       </div>
 
       <ScrollReveal delay={0.2}>
-        <p className="text-center font-mono text-[var(--text-muted)] mb-6">OR</p>
-        <a
-          href={contactLinks.email.href}
-          className="block text-center font-mono text-white hover:text-[var(--cyan)] transition-colors"
-          style={{ fontSize: "clamp(1rem, 2.5vw, 1.8rem)" }}
-          data-cursor-hover
-        >
-          Mail me
-        </a>
-        <div className="flex items-center justify-center gap-2 mt-6">
+        <div className="flex items-center justify-center gap-2">
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
           <span className="text-[#CCFFCC] font-medium" style={{ fontFamily: "var(--font-space-grotesk)" }}>
             Building something? Let&apos;s talk.
