@@ -22,7 +22,7 @@ export default function About() {
             <h3 className="text-white font-extrabold text-2xl md:text-3xl mb-1">A DEVELOPER</h3>
             <h3 className="text-white font-extrabold text-2xl md:text-3xl mb-8">BY CHOICE.</h3>
             <p className="text-white text-base leading-[1.9] mb-8">
-              I&apos;m a 3rd year Computer Science student who builds things that matter. By day I&apos;m deep in code — full
+              I&apos;m a Final Year Computer Science student who builds things that matter. By day I&apos;m deep in code — full
               stack, real products, real clients. By night I&apos;m reading about black holes, dark matter, and the expanding
               universe. My dream? To one day stand at the intersection of technology and cosmology — and maybe, just maybe,
               use code to help us understand the cosmos.

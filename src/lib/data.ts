@@ -43,7 +43,7 @@ export const personalInfo: PersonalInfo = {
     "I write code by night. I chase the cosmos by dream. Somewhere in between — I build things that matter.",
   quote:
     "I would rather exhaust myself building my own dreams than live comfortably building someone else.",
-  year: "3rd Year, Computer Science",
+  year: "Final Year, Computer Science",
 };
 
 export const personalityTraits: string[] = [

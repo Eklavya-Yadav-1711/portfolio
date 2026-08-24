@@ -14,7 +14,7 @@ export default function Hero() {
           transition={{ delay: 0.2 }}
           className="font-mono text-[var(--cyan)] text-[0.7rem] uppercase tracking-[0.35em] mb-4"
         >
-          // FULL STACK DEVELOPER · CS 3RD YEAR
+          // FULL STACK DEVELOPER · CS FINAL YEAR
         </motion.p>
 
         <motion.h1
