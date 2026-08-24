@@ -7,7 +7,6 @@ import QuoteSection from "@/components/QuoteSection";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import StealthStartup from "@/components/StealthStartup";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ClickLanguageBurst from "@/components/ui/ClickLanguageBurst";
@@ -31,7 +30,6 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
-      <StealthStartup />
       <Contact />
       <Footer />
     </main>

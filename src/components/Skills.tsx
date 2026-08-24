@@ -42,23 +42,6 @@ export default function Skills() {
           </ScrollReveal>
         ))}
       </div>
-
-      <ScrollReveal delay={0.3} className="mt-16">
-        <p className="font-mono text-[var(--text-muted)] text-[0.65rem] uppercase tracking-[0.4em] mb-4">
-          // ALWAYS LEARNING
-        </p>
-        <div className="flex flex-wrap gap-3">
-          <div className="px-4 py-3 rounded-lg border border-dashed border-[var(--border)] font-mono text-[0.78rem] text-[var(--text-muted)]">
-            Rust
-          </div>
-          <div className="px-4 py-3 rounded-lg border border-dashed border-[var(--border)] font-mono text-[0.78rem] text-[var(--text-muted)]">
-            Go
-          </div>
-          <div className="px-4 py-3 rounded-lg border border-dashed border-[var(--border)] font-mono text-[0.78rem] text-[var(--text-muted)]">
-            Kubernetes
-          </div>
-        </div>
-      </ScrollReveal>
     </section>
   );
 }

@@ -83,6 +83,8 @@ export default function ProjectCard({ project, featured, index = 0 }: ProjectCar
         </div>
         <Link
           href={project.link ?? "#"}
+          target={project.link ? "_blank" : undefined}
+          rel={project.link ? "noopener noreferrer" : undefined}
           className="font-mono text-[0.75rem] text-[var(--text-muted)] hover:underline inline-flex items-center gap-1 group/link"
           style={{ color: "var(--text-muted)" }}
           onMouseEnter={(e) => {
@@ -92,7 +94,7 @@ export default function ProjectCard({ project, featured, index = 0 }: ProjectCar
             e.currentTarget.style.color = "var(--text-muted)";
           }}
         >
-          Coming Soon
+          {project.link ? "Visit Site" : "Coming Soon"}
           <span>→</span>
         </Link>
       </div>

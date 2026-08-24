@@ -28,19 +28,12 @@ export interface Project {
   description: string;
   tags: string[];
   color: string;
-  status: "coming_soon";
+  status: "coming_soon" | "live";
   isFeatured?: boolean;
   /** Path to project photo in public folder, e.g. "/project-photos/origin-of-saare.jpg" */
   image?: string;
   /** When project is live: URL to open on card click. Leave undefined until ready. */
   link?: string;
-}
-
-export interface StealthStartup {
-  label: string;
-  date: string;
-  teaser: string;
-  status: string;
 }
 
 export const personalInfo: PersonalInfo = {
@@ -95,11 +88,8 @@ export const skillGroups: SkillGroup[] = [
     name: "Languages",
     accentColor: "#F02E65",
     skills: [
-      { icon: "🐍", name: "Python" },
-      { icon: "⚡", name: "JavaScript" },
-      { icon: "🔷", name: "TypeScript" },
       { icon: "☕", name: "Java" },
-      { icon: "⚙️", name: "C/C++" },
+      { icon: "⚡", name: "JavaScript" },
     ],
   },
   {
@@ -108,8 +98,6 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       { icon: "⚛️", name: "React" },
       { icon: "📱", name: "React Native" },
-      { icon: "▲", name: "Next.js" },
-      { icon: "🎨", name: "Tailwind CSS" },
     ],
   },
   {
@@ -122,27 +110,14 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    name: "Database",
-    accentColor: "#336791",
-    skills: [
-      { icon: "🐘", name: "PostgreSQL" },
-      { icon: "💧", name: "Drizzle ORM" },
-    ],
-  },
-  {
     name: "BaaS",
     accentColor: "#3ECF8E",
-    skills: [
-      { name: "Supabase", icon: "" },
-      { icon: "🔥", name: "Firebase" },
-      { name: "Appwrite", icon: "" },
-    ],
+    skills: [{ name: "Supabase", icon: "" }],
   },
   {
     name: "DevOps & Tools",
     accentColor: "#2496ED",
     skills: [
-      { icon: "🐋", name: "Docker" },
       { icon: "🐙", name: "Git & GitHub" },
       { icon: "▲", name: "Vercel" },
       { icon: "🎭", name: "Figma" },
@@ -191,6 +166,18 @@ export const projects: Project[] = [
     image: "/project-photos/resqora.png",
   },
   {
+    id: "nearteach",
+    number: "04",
+    category: "Startup",
+    name: "NEARTEACH",
+    description:
+      "Hyperlocal home tuition platform — PostGIS-powered tutor discovery within 1/3/5km. Live with 230+ users.",
+    tags: ["React Native", "Node.js", "PostgreSQL", "PostGIS"],
+    color: "#6EE7B7",
+    status: "live",
+    link: "https://nearteach.com",
+  },
+  {
     id: "oglos",
     number: "05",
     category: "Security",
@@ -215,14 +202,6 @@ export const projects: Project[] = [
     image: "/project-photos/taskmate.png",
   },
 ];
-
-export const stealthStartup: StealthStartup = {
-  label: "STARTUP INCOMING",
-  date: "JULY 2026",
-  teaser:
-    "Something is being built in the dark. A product. A mission. A solution to a real problem. Details classified.",
-  status: "STEALTH MODE 🔒",
-};
 
 export const contactLinks = {
   github: { label: "GitHub", handle: "@Eklavya-Yadav-1711", href: "https://github.com/Eklavya-Yadav-1711", icon: "🐙" },
